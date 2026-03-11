@@ -1,0 +1,32 @@
+{
+  "invalidCredentials": {
+    "user": {
+      "email": "invalid.user@redinent.local",
+      "password": "WrongPass@123"
+    }
+  },
+  "missingEmail": {
+    "user": {
+      "email": "",
+      "password": "AnyPassword@123"
+    }
+  },
+  "missingPassword": {
+    "user": {
+      "email": "qa.user@redinent.local",
+      "password": ""
+    }
+  },
+  "boundaryEmailLong": {
+    "user": {
+      "email": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@redinent.local",
+      "password": "Boundary@123"
+    }
+  },
+  "sqlInjectionAttempt": {
+    "user": {
+      "email": "' OR '1'='1",
+      "password": "' OR '1'='1"
+    }
+  }
+}

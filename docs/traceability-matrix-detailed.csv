@@ -1,0 +1,269 @@
+Module,Endpoint,Case ID,Type,Priority,Automation Status,Owner,Sprint,Scenario
+Cross-Cutting,*,GEN-001,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-001 in module Cross-Cutting
+Cross-Cutting,*,GEN-002,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-002 in module Cross-Cutting
+Cross-Cutting,*,GEN-003,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-003 in module Cross-Cutting
+Cross-Cutting,*,GEN-004,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-004 in module Cross-Cutting
+Cross-Cutting,*,GEN-005,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-005 in module Cross-Cutting
+Cross-Cutting,*,GEN-006,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-006 in module Cross-Cutting
+Cross-Cutting,*,GEN-007,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-007 in module Cross-Cutting
+Cross-Cutting,*,GEN-008,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-008 in module Cross-Cutting
+Cross-Cutting,*,GEN-009,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-009 in module Cross-Cutting
+Cross-Cutting,*,GEN-010,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-010 in module Cross-Cutting
+Cross-Cutting,*,GEN-011,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-011 in module Cross-Cutting
+Cross-Cutting,*,GEN-012,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-012 in module Cross-Cutting
+Cross-Cutting,*,GEN-013,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-013 in module Cross-Cutting
+Cross-Cutting,*,GEN-014,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-014 in module Cross-Cutting
+Cross-Cutting,*,GEN-015,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-015 in module Cross-Cutting
+Cross-Cutting,*,GEN-016,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-016 in module Cross-Cutting
+Cross-Cutting,*,GEN-017,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-017 in module Cross-Cutting
+Cross-Cutting,*,GEN-018,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-018 in module Cross-Cutting
+Cross-Cutting,*,GEN-019,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-019 in module Cross-Cutting
+Cross-Cutting,*,GEN-020,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-020 in module Cross-Cutting
+Cross-Cutting,*,GEN-021,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-021 in module Cross-Cutting
+Cross-Cutting,*,GEN-022,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-022 in module Cross-Cutting
+Cross-Cutting,*,GEN-023,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-023 in module Cross-Cutting
+Cross-Cutting,*,GEN-024,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-024 in module Cross-Cutting
+Cross-Cutting,*,GEN-025,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-025 in module Cross-Cutting
+Cross-Cutting,*,GEN-026,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-026 in module Cross-Cutting
+Cross-Cutting,*,GEN-027,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-027 in module Cross-Cutting
+Cross-Cutting,*,GEN-028,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-028 in module Cross-Cutting
+Cross-Cutting,*,GEN-029,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-029 in module Cross-Cutting
+Cross-Cutting,*,GEN-030,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for GEN-030 in module Cross-Cutting
+Authentication,POST /api/users/sign_in,AUTH-001,Positive,P0,Automated,QE API Team,Sprint-0,Valid login returns success and user payload
+Authentication,POST /api/users/sign_in,AUTH-002,Negative,P0,Automated,QE API Team,Sprint-0,Invalid password returns failure message
+Authentication,POST /api/users/sign_in,AUTH-003,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-003 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-004,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-004 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-005,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-005 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-006,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-006 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-007,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-007 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-008,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-008 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-009,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-009 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-010,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-010 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-011,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-011 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-012,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-012 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-013,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-013 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-014,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-014 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-015,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-015 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-016,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-016 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-017,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-017 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-018,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-018 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-019,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-019 in module Authentication
+Authentication,POST /api/users/sign_in,AUTH-020,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for AUTH-020 in module Authentication
+2FA / OTP (Web Session),GET/POST /verify_otp, GET /resend_otp,OTP-001,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  GET /resend_otp in module 2FA / OTP (Web Session)
+2FA / OTP (Web Session),GET/POST /verify_otp, GET /resend_otp,OTP-002,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  GET /resend_otp in module 2FA / OTP (Web Session)
+2FA / OTP (Web Session),GET/POST /verify_otp, GET /resend_otp,OTP-003,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  GET /resend_otp in module 2FA / OTP (Web Session)
+2FA / OTP (Web Session),GET/POST /verify_otp, GET /resend_otp,OTP-004,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  GET /resend_otp in module 2FA / OTP (Web Session)
+2FA / OTP (Web Session),GET/POST /verify_otp, GET /resend_otp,OTP-005,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  GET /resend_otp in module 2FA / OTP (Web Session)
+2FA / OTP (Web Session),GET/POST /verify_otp, GET /resend_otp,OTP-006,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  GET /resend_otp in module 2FA / OTP (Web Session)
+2FA / OTP (Web Session),GET/POST /verify_otp, GET /resend_otp,OTP-007,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  GET /resend_otp in module 2FA / OTP (Web Session)
+2FA / OTP (Web Session),GET/POST /verify_otp, GET /resend_otp,OTP-008,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  GET /resend_otp in module 2FA / OTP (Web Session)
+2FA / OTP (Web Session),GET/POST /verify_otp, GET /resend_otp,OTP-009,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  GET /resend_otp in module 2FA / OTP (Web Session)
+2FA / OTP (Web Session),GET/POST /verify_otp, GET /resend_otp,OTP-010,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  GET /resend_otp in module 2FA / OTP (Web Session)
+2FA / OTP (Web Session),GET/POST /verify_otp, GET /resend_otp,OTP-011,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  GET /resend_otp in module 2FA / OTP (Web Session)
+2FA / OTP (Web Session),GET/POST /verify_otp, GET /resend_otp,OTP-012,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  GET /resend_otp in module 2FA / OTP (Web Session)
+Authorization / RBAC,Cross-endpoint,RBAC-001,Positive/Negative/Break,P0-P1,Pending,QE Security,Sprint-2,Comprehensive test scenario for RBAC-001 in module Authorization / RBAC
+Authorization / RBAC,Cross-endpoint,RBAC-002,Positive/Negative/Break,P0-P1,Pending,QE Security,Sprint-2,Comprehensive test scenario for RBAC-002 in module Authorization / RBAC
+Authorization / RBAC,Cross-endpoint,RBAC-003,Positive/Negative/Break,P0-P1,Pending,QE Security,Sprint-2,Comprehensive test scenario for RBAC-003 in module Authorization / RBAC
+Authorization / RBAC,Cross-endpoint,RBAC-004,Positive/Negative/Break,P0-P1,Pending,QE Security,Sprint-2,Comprehensive test scenario for RBAC-004 in module Authorization / RBAC
+Authorization / RBAC,Cross-endpoint,RBAC-005,Positive/Negative/Break,P0-P1,Pending,QE Security,Sprint-2,Comprehensive test scenario for RBAC-005 in module Authorization / RBAC
+Authorization / RBAC,Cross-endpoint,RBAC-006,Positive/Negative/Break,P0-P1,Pending,QE Security,Sprint-2,Comprehensive test scenario for RBAC-006 in module Authorization / RBAC
+Authorization / RBAC,Cross-endpoint,RBAC-007,Positive/Negative/Break,P0-P1,Pending,QE Security,Sprint-2,Comprehensive test scenario for RBAC-007 in module Authorization / RBAC
+Authorization / RBAC,Cross-endpoint,RBAC-008,Positive/Negative/Break,P0-P1,Pending,QE Security,Sprint-2,Comprehensive test scenario for RBAC-008 in module Authorization / RBAC
+Authorization / RBAC,Cross-endpoint,RBAC-009,Positive/Negative/Break,P0-P1,Pending,QE Security,Sprint-2,Comprehensive test scenario for RBAC-009 in module Authorization / RBAC
+Authorization / RBAC,Cross-endpoint,RBAC-010,Positive/Negative/Break,P0-P1,Pending,QE Security,Sprint-2,Comprehensive test scenario for RBAC-010 in module Authorization / RBAC
+Reports API,GET /api/reports/get_locations,RPT-001,Positive,P0,Automated,QE API Team,Sprint-0,Locations endpoint returns schema-valid response
+Reports API,GET /api/reports/*,RPT-002,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-002 in module Reports API
+Reports API,GET /api/reports/get_device_count,RPT-003,Positive,P0,Automated,QE API Team,Sprint-0,Device count endpoint returns expected response for valid query
+Reports API,GET /api/reports/*,RPT-004,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-004 in module Reports API
+Reports API,GET /api/reports/*,RPT-005,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-005 in module Reports API
+Reports API,GET /api/reports/*,RPT-006,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-006 in module Reports API
+Reports API,GET /api/reports/*,RPT-007,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-007 in module Reports API
+Reports API,GET /api/reports/*,RPT-008,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-008 in module Reports API
+Reports API,GET /api/reports/get_device_count,RPT-009,Negative,P0,Automated,QE API Team,Sprint-0,Missing required query params returns 400 with message
+Reports API,GET /api/reports/*,RPT-010,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-010 in module Reports API
+Reports API,GET /api/reports/*,RPT-011,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-011 in module Reports API
+Reports API,GET /api/reports/*,RPT-012,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-012 in module Reports API
+Reports API,GET /api/reports/*,RPT-013,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-013 in module Reports API
+Reports API,GET /api/reports/*,RPT-014,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-014 in module Reports API
+Reports API,GET /api/reports/*,RPT-015,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-015 in module Reports API
+Reports API,GET /api/reports/*,RPT-016,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-016 in module Reports API
+Reports API,GET /api/reports/*,RPT-017,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-017 in module Reports API
+Reports API,GET /api/reports/*,RPT-018,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-018 in module Reports API
+Reports API,GET /api/reports/*,RPT-019,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-019 in module Reports API
+Reports API,GET /api/reports/*,RPT-020,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-020 in module Reports API
+Reports API,GET /api/reports/*,RPT-021,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-021 in module Reports API
+Reports API,GET /api/reports/*,RPT-022,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-022 in module Reports API
+Reports API,GET /api/reports/*,RPT-023,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-023 in module Reports API
+Reports API,GET /api/reports/*,RPT-024,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-024 in module Reports API
+Reports API,GET /api/reports/*,RPT-025,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-1,Comprehensive test scenario for RPT-025 in module Reports API
+API Key Reports,GET /reports/api_*,APIKEY-001,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-001 in module API Key Reports
+API Key Reports,GET /reports/api_scan_details,APIKEY-002,Negative,P0,Automated,QE API Team,Sprint-0,Invalid api_key is rejected for scan details endpoint
+API Key Reports,GET /reports/api_*,APIKEY-003,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-003 in module API Key Reports
+API Key Reports,GET /reports/api_*,APIKEY-004,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-004 in module API Key Reports
+API Key Reports,GET /reports/api_*,APIKEY-005,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-005 in module API Key Reports
+API Key Reports,GET /reports/api_*,APIKEY-006,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-006 in module API Key Reports
+API Key Reports,GET /reports/api_*,APIKEY-007,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-007 in module API Key Reports
+API Key Reports,GET /reports/api_*,APIKEY-008,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-008 in module API Key Reports
+API Key Reports,GET /reports/api_*,APIKEY-009,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-009 in module API Key Reports
+API Key Reports,GET /reports/api_*,APIKEY-010,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-010 in module API Key Reports
+API Key Reports,GET /reports/api_*,APIKEY-011,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-011 in module API Key Reports
+API Key Reports,GET /reports/api_*,APIKEY-012,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-012 in module API Key Reports
+API Key Reports,GET /reports/api_*,APIKEY-013,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-013 in module API Key Reports
+API Key Reports,GET /reports/api_*,APIKEY-014,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-014 in module API Key Reports
+API Key Reports,GET /reports/api_*,APIKEY-015,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for APIKEY-015 in module API Key Reports
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-001,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-001 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-002,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-002 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-003,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-003 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-004,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-004 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-005,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-005 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-006,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-006 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-007,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-007 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-008,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-008 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-009,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-009 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-010,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-010 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-011,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-011 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-012,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-012 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-013,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-013 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-014,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-014 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-015,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-015 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-016,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-016 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-017,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-017 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-018,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-018 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-019,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-019 in module Discoveries / Scan Control
+Discoveries / Scan Control,GET/POST /discoveries/*,DSC-020,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DSC-020 in module Discoveries / Scan Control
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-001,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-001 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-002,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-002 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-003,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-003 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-004,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-004 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-005,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-005 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-006,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-006 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-007,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-007 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-008,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-008 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-009,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-009 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-010,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-010 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-011,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-011 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-012,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-012 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-013,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-013 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-014,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-014 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-015,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-015 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-016,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-016 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-017,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-017 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-018,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-018 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-019,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-019 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-020,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-020 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-021,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-021 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-022,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-022 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-023,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-023 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-024,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-024 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-025,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-025 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-026,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-026 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-027,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-027 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-028,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-028 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-029,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-029 in module Devices / Assets
+Devices / Assets,GET/POST/PATCH /devices/*,DEV-030,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for DEV-030 in module Devices / Assets
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-001,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-002,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-003,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-004,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-005,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-006,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-007,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-008,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-009,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-010,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-011,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-012,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-013,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-014,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-015,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-016,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-017,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-018,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-019,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Users,GET/POST/PATCH /users*, /create_user, /update_user,USR-020,Positive/Negative/Edge/Break,P0-P2,Pending,QE API Team,Sprint-2,Comprehensive test scenario for  /create_user in module Users
+Tenants,GET/POST/PATCH /tenants/*,TEN-001,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-001 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-002,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-002 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-003,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-003 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-004,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-004 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-005,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-005 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-006,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-006 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-007,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-007 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-008,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-008 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-009,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-009 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-010,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-010 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-011,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-011 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-012,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-012 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-013,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-013 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-014,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-014 in module Tenants
+Tenants,GET/POST/PATCH /tenants/*,TEN-015,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for TEN-015 in module Tenants
+Diagnostics,GET/POST /diagnostics*,DIA-001,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for DIA-001 in module Diagnostics
+Diagnostics,GET/POST /diagnostics*,DIA-002,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for DIA-002 in module Diagnostics
+Diagnostics,GET/POST /diagnostics*,DIA-003,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for DIA-003 in module Diagnostics
+Diagnostics,GET/POST /diagnostics*,DIA-004,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for DIA-004 in module Diagnostics
+Diagnostics,GET/POST /diagnostics*,DIA-005,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for DIA-005 in module Diagnostics
+Diagnostics,GET/POST /diagnostics*,DIA-006,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for DIA-006 in module Diagnostics
+Diagnostics,GET/POST /diagnostics*,DIA-007,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for DIA-007 in module Diagnostics
+Diagnostics,GET/POST /diagnostics*,DIA-008,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for DIA-008 in module Diagnostics
+Diagnostics,GET/POST /diagnostics*,DIA-009,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for DIA-009 in module Diagnostics
+Diagnostics,GET/POST /diagnostics*,DIA-010,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for DIA-010 in module Diagnostics
+OEM Signatures / Import,GET/POST /oemsignatures*,OEM-001,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for OEM-001 in module OEM Signatures / Import
+OEM Signatures / Import,GET/POST /oemsignatures*,OEM-002,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for OEM-002 in module OEM Signatures / Import
+OEM Signatures / Import,GET/POST /oemsignatures*,OEM-003,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for OEM-003 in module OEM Signatures / Import
+OEM Signatures / Import,GET/POST /oemsignatures*,OEM-004,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for OEM-004 in module OEM Signatures / Import
+OEM Signatures / Import,GET/POST /oemsignatures*,OEM-005,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for OEM-005 in module OEM Signatures / Import
+OEM Signatures / Import,GET/POST /oemsignatures*,OEM-006,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for OEM-006 in module OEM Signatures / Import
+OEM Signatures / Import,GET/POST /oemsignatures*,OEM-007,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for OEM-007 in module OEM Signatures / Import
+OEM Signatures / Import,GET/POST /oemsignatures*,OEM-008,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for OEM-008 in module OEM Signatures / Import
+OEM Signatures / Import,GET/POST /oemsignatures*,OEM-009,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for OEM-009 in module OEM Signatures / Import
+OEM Signatures / Import,GET/POST /oemsignatures*,OEM-010,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for OEM-010 in module OEM Signatures / Import
+Zip Upload / File APIs,POST /zip_uploads, file ops,ZIP-001,Positive/Negative/Edge/Break,P1-P2,Pending,QE Security,Sprint-3,Comprehensive test scenario for  file ops in module Zip Upload / File APIs
+Zip Upload / File APIs,POST /zip_uploads, file ops,ZIP-002,Positive/Negative/Edge/Break,P1-P2,Pending,QE Security,Sprint-3,Comprehensive test scenario for  file ops in module Zip Upload / File APIs
+Zip Upload / File APIs,POST /zip_uploads, file ops,ZIP-003,Positive/Negative/Edge/Break,P1-P2,Pending,QE Security,Sprint-3,Comprehensive test scenario for  file ops in module Zip Upload / File APIs
+Zip Upload / File APIs,POST /zip_uploads, file ops,ZIP-004,Positive/Negative/Edge/Break,P1-P2,Pending,QE Security,Sprint-3,Comprehensive test scenario for  file ops in module Zip Upload / File APIs
+Zip Upload / File APIs,POST /zip_uploads, file ops,ZIP-005,Positive/Negative/Edge/Break,P1-P2,Pending,QE Security,Sprint-3,Comprehensive test scenario for  file ops in module Zip Upload / File APIs
+Zip Upload / File APIs,POST /zip_uploads, file ops,ZIP-006,Positive/Negative/Edge/Break,P1-P2,Pending,QE Security,Sprint-3,Comprehensive test scenario for  file ops in module Zip Upload / File APIs
+Zip Upload / File APIs,POST /zip_uploads, file ops,ZIP-007,Positive/Negative/Edge/Break,P1-P2,Pending,QE Security,Sprint-3,Comprehensive test scenario for  file ops in module Zip Upload / File APIs
+Zip Upload / File APIs,POST /zip_uploads, file ops,ZIP-008,Positive/Negative/Edge/Break,P1-P2,Pending,QE Security,Sprint-3,Comprehensive test scenario for  file ops in module Zip Upload / File APIs
+Zip Upload / File APIs,POST /zip_uploads, file ops,ZIP-009,Positive/Negative/Edge/Break,P1-P2,Pending,QE Security,Sprint-3,Comprehensive test scenario for  file ops in module Zip Upload / File APIs
+Zip Upload / File APIs,POST /zip_uploads, file ops,ZIP-010,Positive/Negative/Edge/Break,P1-P2,Pending,QE Security,Sprint-3,Comprehensive test scenario for  file ops in module Zip Upload / File APIs
+Export / Async File Generation,GET /reports/export* , status APIs,EXP-001,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  status APIs in module Export / Async File Generation
+Export / Async File Generation,GET /reports/export* , status APIs,EXP-002,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  status APIs in module Export / Async File Generation
+Export / Async File Generation,GET /reports/export* , status APIs,EXP-003,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  status APIs in module Export / Async File Generation
+Export / Async File Generation,GET /reports/export* , status APIs,EXP-004,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  status APIs in module Export / Async File Generation
+Export / Async File Generation,GET /reports/export* , status APIs,EXP-005,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  status APIs in module Export / Async File Generation
+Export / Async File Generation,GET /reports/export* , status APIs,EXP-006,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  status APIs in module Export / Async File Generation
+Export / Async File Generation,GET /reports/export* , status APIs,EXP-007,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  status APIs in module Export / Async File Generation
+Export / Async File Generation,GET /reports/export* , status APIs,EXP-008,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  status APIs in module Export / Async File Generation
+Uptime / Comparison Dashboards,GET/POST /asset_upmon*, /comparison_dashboard*,UPM-001,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  /comparison_dashboard* in module Uptime / Comparison Dashboards
+Uptime / Comparison Dashboards,GET/POST /asset_upmon*, /comparison_dashboard*,UPM-002,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  /comparison_dashboard* in module Uptime / Comparison Dashboards
+Uptime / Comparison Dashboards,GET/POST /asset_upmon*, /comparison_dashboard*,UPM-003,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  /comparison_dashboard* in module Uptime / Comparison Dashboards
+Uptime / Comparison Dashboards,GET/POST /asset_upmon*, /comparison_dashboard*,UPM-004,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  /comparison_dashboard* in module Uptime / Comparison Dashboards
+Uptime / Comparison Dashboards,GET/POST /asset_upmon*, /comparison_dashboard*,UPM-005,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  /comparison_dashboard* in module Uptime / Comparison Dashboards
+Uptime / Comparison Dashboards,GET/POST /asset_upmon*, /comparison_dashboard*,UPM-006,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  /comparison_dashboard* in module Uptime / Comparison Dashboards
+Uptime / Comparison Dashboards,GET/POST /asset_upmon*, /comparison_dashboard*,UPM-007,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  /comparison_dashboard* in module Uptime / Comparison Dashboards
+Uptime / Comparison Dashboards,GET/POST /asset_upmon*, /comparison_dashboard*,UPM-008,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  /comparison_dashboard* in module Uptime / Comparison Dashboards
+Uptime / Comparison Dashboards,GET/POST /asset_upmon*, /comparison_dashboard*,UPM-009,Positive/Negative/Edge/Break,P1-P2,Pending,QE API Team,Sprint-3,Comprehensive test scenario for  /comparison_dashboard* in module Uptime / Comparison Dashboards
+Contract / Schema / Compatibility,POST /api/users/sign_in,CON-001,Positive,P0,Automated,QE Contract Team,Sprint-0,Pact contract validates /api/users/sign_in response
+Contract / Schema / Compatibility,Pact + schema checks,CON-002,Positive/Negative/Edge/Break,P0-P1,Pending,QE Contract Team,Sprint-2,Comprehensive test scenario for CON-002 in module Contract / Schema / Compatibility
+Contract / Schema / Compatibility,Pact + schema checks,CON-003,Positive/Negative/Edge/Break,P0-P1,Pending,QE Contract Team,Sprint-2,Comprehensive test scenario for CON-003 in module Contract / Schema / Compatibility
+Contract / Schema / Compatibility,Pact + schema checks,CON-004,Positive/Negative/Edge/Break,P0-P1,Pending,QE Contract Team,Sprint-2,Comprehensive test scenario for CON-004 in module Contract / Schema / Compatibility
+Contract / Schema / Compatibility,Pact + schema checks,CON-005,Positive/Negative/Edge/Break,P0-P1,Pending,QE Contract Team,Sprint-2,Comprehensive test scenario for CON-005 in module Contract / Schema / Compatibility
+Contract / Schema / Compatibility,Pact + schema checks,CON-006,Positive/Negative/Edge/Break,P0-P1,Pending,QE Contract Team,Sprint-2,Comprehensive test scenario for CON-006 in module Contract / Schema / Compatibility
+Performance / Resilience / Chaos,POST /api/users/sign_in + GET /api/reports/get_locations,CHA-001,Positive,P1,Automated (script ready),QE Perf Team,Sprint-1,k6 smoke validates login and locations baseline performance
+Performance / Resilience / Chaos,Cross-endpoint,CHA-002,Edge/Break,P1-P2,Pending,QE Perf Team,Sprint-3,Comprehensive test scenario for CHA-002 in module Performance / Resilience / Chaos
+Performance / Resilience / Chaos,Cross-endpoint,CHA-003,Edge/Break,P1-P2,Pending,QE Perf Team,Sprint-3,Comprehensive test scenario for CHA-003 in module Performance / Resilience / Chaos
+Performance / Resilience / Chaos,Cross-endpoint,CHA-004,Edge/Break,P1-P2,Pending,QE Perf Team,Sprint-3,Comprehensive test scenario for CHA-004 in module Performance / Resilience / Chaos
+Performance / Resilience / Chaos,Cross-endpoint,CHA-005,Edge/Break,P1-P2,Pending,QE Perf Team,Sprint-3,Comprehensive test scenario for CHA-005 in module Performance / Resilience / Chaos
+Performance / Resilience / Chaos,Cross-endpoint,CHA-006,Edge/Break,P1-P2,Pending,QE Perf Team,Sprint-3,Comprehensive test scenario for CHA-006 in module Performance / Resilience / Chaos
+Performance / Resilience / Chaos,Cross-endpoint,CHA-007,Edge/Break,P1-P2,Pending,QE Perf Team,Sprint-3,Comprehensive test scenario for CHA-007 in module Performance / Resilience / Chaos
+Performance / Resilience / Chaos,Cross-endpoint,CHA-008,Edge/Break,P1-P2,Pending,QE Perf Team,Sprint-3,Comprehensive test scenario for CHA-008 in module Performance / Resilience / Chaos
+Performance / Resilience / Chaos,Cross-endpoint,CHA-009,Edge/Break,P1-P2,Pending,QE Perf Team,Sprint-3,Comprehensive test scenario for CHA-009 in module Performance / Resilience / Chaos
+Performance / Resilience / Chaos,Cross-endpoint,CHA-010,Edge/Break,P1-P2,Pending,QE Perf Team,Sprint-3,Comprehensive test scenario for CHA-010 in module Performance / Resilience / Chaos
+Observability / Audit / Compliance,Cross-endpoint,OBS-001,Positive/Negative/Edge/Break,P1-P2,Pending,QE Platform,Sprint-3,Comprehensive test scenario for OBS-001 in module Observability / Audit / Compliance
+Observability / Audit / Compliance,Cross-endpoint,OBS-002,Positive/Negative/Edge/Break,P1-P2,Pending,QE Platform,Sprint-3,Comprehensive test scenario for OBS-002 in module Observability / Audit / Compliance
+Observability / Audit / Compliance,Cross-endpoint,OBS-003,Positive/Negative/Edge/Break,P1-P2,Pending,QE Platform,Sprint-3,Comprehensive test scenario for OBS-003 in module Observability / Audit / Compliance
+Observability / Audit / Compliance,Cross-endpoint,OBS-004,Positive/Negative/Edge/Break,P1-P2,Pending,QE Platform,Sprint-3,Comprehensive test scenario for OBS-004 in module Observability / Audit / Compliance
+Observability / Audit / Compliance,Cross-endpoint,OBS-005,Positive/Negative/Edge/Break,P1-P2,Pending,QE Platform,Sprint-3,Comprehensive test scenario for OBS-005 in module Observability / Audit / Compliance
+Observability / Audit / Compliance,Cross-endpoint,OBS-006,Positive/Negative/Edge/Break,P1-P2,Pending,QE Platform,Sprint-3,Comprehensive test scenario for OBS-006 in module Observability / Audit / Compliance
+Observability / Audit / Compliance,Cross-endpoint,OBS-007,Positive/Negative/Edge/Break,P1-P2,Pending,QE Platform,Sprint-3,Comprehensive test scenario for OBS-007 in module Observability / Audit / Compliance
+Observability / Audit / Compliance,Cross-endpoint,OBS-008,Positive/Negative/Edge/Break,P1-P2,Pending,QE Platform,Sprint-3,Comprehensive test scenario for OBS-008 in module Observability / Audit / Compliance

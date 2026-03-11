@@ -1,0 +1,174 @@
+name: Redinent API Quality Pipeline
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      target_env:
+        description: 'Environment'
+        required: true
+        default: 'qa'
+        type: choice
+        options:
+          - dev
+          - qa
+          - uat
+
+env:
+  NODE_VERSION: '20'
+  TARGET_ENV: ${{ github.event.inputs.target_env || 'qa' }}
+
+jobs:
+  quality-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+
+  smoke-tests:
+    if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    needs: [quality-gates]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps
+      - run: npm run test:smoke
+        env:
+          NODE_ENV: ${{ env.TARGET_ENV }}
+          BASE_URL: ${{ secrets.BASE_URL }}
+          DEFAULT_USERNAME: ${{ secrets.DEFAULT_USERNAME }}
+          DEFAULT_PASSWORD: ${{ secrets.DEFAULT_PASSWORD }}
+          CORE_API_KEY: ${{ secrets.CORE_API_KEY }}
+          SAMPLE_UID: ${{ secrets.SAMPLE_UID }}
+      - run: RUN_DATE=$(date -u +%F) npm run status:update
+        if: always()
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: smoke-allure-results
+          path: allure-results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: smoke-junit
+          path: reports/junit/results.xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: smoke-automation-status
+          path: |
+            docs/automation-mapping-sheet.csv
+            docs/defect-sheet.csv
+
+  regression-tests:
+    if: github.event_name == 'push' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    needs: [quality-gates]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps
+      - run: npm run test:regression
+        env:
+          NODE_ENV: ${{ env.TARGET_ENV }}
+          BASE_URL: ${{ secrets.BASE_URL }}
+          DEFAULT_USERNAME: ${{ secrets.DEFAULT_USERNAME }}
+          DEFAULT_PASSWORD: ${{ secrets.DEFAULT_PASSWORD }}
+          CORE_API_KEY: ${{ secrets.CORE_API_KEY }}
+          SAMPLE_UID: ${{ secrets.SAMPLE_UID }}
+      - run: RUN_DATE=$(date -u +%F) npm run status:update
+        if: always()
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: regression-allure-results
+          path: allure-results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: regression-junit
+          path: reports/junit/results.xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: regression-automation-status
+          path: |
+            docs/automation-mapping-sheet.csv
+            docs/defect-sheet.csv
+
+  security-tests:
+    if: github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    needs: [quality-gates]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps
+      - run: npm run test:security
+        env:
+          NODE_ENV: ${{ env.TARGET_ENV }}
+          BASE_URL: ${{ secrets.BASE_URL }}
+          DEFAULT_USERNAME: ${{ secrets.DEFAULT_USERNAME }}
+          DEFAULT_PASSWORD: ${{ secrets.DEFAULT_PASSWORD }}
+          CORE_API_KEY: ${{ secrets.CORE_API_KEY }}
+          SAMPLE_UID: ${{ secrets.SAMPLE_UID }}
+      - run: RUN_DATE=$(date -u +%F) npm run status:update
+        if: always()
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: security-allure-results
+          path: allure-results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: security-junit
+          path: reports/junit/results.xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: security-automation-status
+          path: |
+            docs/automation-mapping-sheet.csv
+            docs/defect-sheet.csv
+
+  contract-tests:
+    runs-on: ubuntu-latest
+    needs: [quality-gates]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - run: npm run test:contracts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pact-files
+          path: pacts

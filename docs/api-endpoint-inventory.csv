@@ -1,0 +1,240 @@
+Module,Method,Endpoint,Route Source
+Authentication,POST,/api/sign_in,direct-route
+Other,PATCH,/api/users/password,devise-default
+Other,POST,/api/users/password,devise-default
+Other,PUT,/api/users/password,devise-default
+Other,GET,/api/users/password/edit,devise-default
+Other,GET,/api/users/password/new,devise-default
+Authentication,GET,/api/users/sign_in,devise-default
+Authentication,POST,/api/users/sign_in,devise-default
+Authentication,DELETE,/api/users/sign_out,devise-default
+Uptime Monitoring,GET,/asset_upmon,direct-route
+Uptime Monitoring,POST,/asset_upmon,resources:create
+Uptime Monitoring,DELETE,/asset_upmon/:id,resources:destroy
+Uptime Monitoring,GET,/asset_upmon/:id,resources:show
+Uptime Monitoring,PATCH,/asset_upmon/:id,resources:update
+Uptime Monitoring,PUT,/asset_upmon/:id,resources:update
+Uptime Monitoring,GET,/asset_upmon/:id/edit,resources:edit
+Uptime Monitoring,POST,/asset_upmon/add_server_details,direct-route
+Uptime Monitoring,GET,/asset_upmon/new,resources:new
+Uptime Monitoring,GET,/asset_upmon/server_detail,direct-route
+Uptime Monitoring,POST,/asset_upmon/set_frequency,direct-route
+Uptime Monitoring,POST,/asset_upmon/upmmon_graph,direct-route
+Asset Group Management,GET,/assetgroupmasters,resources:index
+Asset Group Management,POST,/assetgroupmasters,resources:create
+Asset Group Management,DELETE,/assetgroupmasters/:id,resources:destroy
+Asset Group Management,GET,/assetgroupmasters/:id,resources:show
+Asset Group Management,PATCH,/assetgroupmasters/:id,resources:update
+Asset Group Management,PUT,/assetgroupmasters/:id,resources:update
+Asset Group Management,GET,/assetgroupmasters/:id/edit,resources:edit
+Asset Group Management,PATCH,/assetgroupmasters/:id/toggle_activation,resource-member
+Asset Group Management,GET,/assetgroupmasters/new,resources:new
+Comparison Dashboard,GET,/comparison_dashboard,direct-route
+Comparison Dashboard,POST,/comparison_dashboard/fetch_comparison_data,direct-route
+Users,POST,/create_user,direct-route
+CWE Results,GET,/cwetestresults,resources:index
+CWE Results,POST,/cwetestresults,resources:create
+CWE Results,DELETE,/cwetestresults/:id,resources:destroy
+CWE Results,GET,/cwetestresults/:id,resources:show
+CWE Results,PATCH,/cwetestresults/:id,resources:update
+CWE Results,PUT,/cwetestresults/:id,resources:update
+CWE Results,GET,/cwetestresults/:id/edit,resources:edit
+CWE Results,GET,/cwetestresults/new,resources:new
+Application Utilities,POST,/delete_export_file,direct-route
+Other,DELETE,/destroy,direct-route
+Devices & Assets,GET,/devices,resources:index
+Devices & Assets,POST,/devices,resources:create
+Devices & Assets,DELETE,/devices/:id,resources:destroy
+Devices & Assets,GET,/devices/:id,resources:show
+Devices & Assets,PATCH,/devices/:id,resources:update
+Devices & Assets,PUT,/devices/:id,resources:update
+Devices & Assets,GET,/devices/:id/edit,resources:edit
+Devices & Assets,GET,/devices/asset_inventory_dashboard,resource-collection
+Devices & Assets,POST,/devices/batch_update_location,resource-collection
+Devices & Assets,POST,/devices/batch_update_password,resource-collection
+Devices & Assets,POST,/devices/batch_update_tag,resource-collection
+Devices & Assets,POST,/devices/batch_update_verified,resource-collection
+Devices & Assets,GET,/devices/clear_asset_log,resource-collection
+Devices & Assets,GET,/devices/device_dashboard,resource-collection
+Devices & Assets,GET,/devices/export_devices,resource-collection
+Devices & Assets,GET,/devices/export_devices_file_status,resource-collection
+Devices & Assets,GET,/devices/express_asset_dashboard,resource-collection
+Devices & Assets,GET,/devices/get_device_type_and_oem,resource-collection
+Devices & Assets,GET,/devices/get_device_type_oem,resource-collection
+Devices & Assets,POST,/devices/import,resource-collection
+Devices & Assets,GET,/devices/mapping,resource-collection
+Devices & Assets,GET,/devices/new,resources:new
+Devices & Assets,GET,/devices/new_import,resource-collection
+Devices & Assets,GET,/devices/new_registered_asset,resource-collection
+Devices & Assets,POST,/devices/registered_asset,resource-collection
+Devices & Assets,POST,/devices/resync_assets,resource-collection
+Devices & Assets,POST,/devices/save_import,resource-collection
+Devices & Assets,DELETE,/devices/truncate,resource-collection
+Devices & Assets,GET,/devices/vulnerability_details,resource-collection
+Diagnostics,GET,/diagnostics,resources:index
+Diagnostics,POST,/diagnostics,resources:create
+Diagnostics,GET,/diagnostics_meta_data,resources:index
+Diagnostics,POST,/diagnostics_meta_data,resources:create
+Diagnostics,DELETE,/diagnostics_meta_data/:id,resources:destroy
+Diagnostics,GET,/diagnostics_meta_data/:id,resources:show
+Diagnostics,PATCH,/diagnostics_meta_data/:id,resources:update
+Diagnostics,PUT,/diagnostics_meta_data/:id,resources:update
+Diagnostics,GET,/diagnostics_meta_data/:id/edit,resources:edit
+Diagnostics,GET,/diagnostics_meta_data/:id/rescan,resource-member
+Diagnostics,GET,/diagnostics_meta_data/new,resources:new
+Diagnostics,DELETE,/diagnostics/:id,resources:destroy
+Diagnostics,GET,/diagnostics/:id,resources:show
+Diagnostics,PATCH,/diagnostics/:id,resources:update
+Diagnostics,PUT,/diagnostics/:id,resources:update
+Diagnostics,GET,/diagnostics/:id/edit,resources:edit
+Diagnostics,GET,/diagnostics/:id/stop,resource-member
+Diagnostics,GET,/diagnostics/new,resources:new
+Discovery & Scan,GET,/discoveries,resources:index
+Discovery & Scan,POST,/discoveries,resources:create
+Discovery & Scan,DELETE,/discoveries/:id,resources:destroy
+Discovery & Scan,GET,/discoveries/:id,resources:show
+Discovery & Scan,PATCH,/discoveries/:id,resources:update
+Discovery & Scan,PUT,/discoveries/:id,resources:update
+Discovery & Scan,GET,/discoveries/:id/edit,resources:edit
+Discovery & Scan,POST,/discoveries/:id/toggle_scan_status,resource-member
+Discovery & Scan,GET,/discoveries/check_schedule_conflict,resource-collection
+Discovery & Scan,GET,/discoveries/clear_log,resource-collection
+Discovery & Scan,GET,/discoveries/detailed_status,resource-collection
+Discovery & Scan,GET,/discoveries/es_index,resource-collection
+Discovery & Scan,GET,/discoveries/get_scan_settings,resource-collection
+Discovery & Scan,GET,/discoveries/liveresult,resource-collection
+Discovery & Scan,GET,/discoveries/new,resources:new
+Discovery & Scan,GET,/discoveries/newassetdiscovery,resource-collection
+Discovery & Scan,GET,/discoveries/rescan,resource-collection
+Discovery & Scan,GET,/discoveries/scanconfig,resource-collection
+Discovery & Scan,GET,/discoveries/status,resource-collection
+Discovery & Scan,GET,/discoveries/stop,resource-collection
+Discovery Templates,GET,/discoverytemplates,resources:index
+Discovery Templates,POST,/discoverytemplates,resources:create
+Discovery Templates,DELETE,/discoverytemplates/:id,resources:destroy
+Discovery Templates,GET,/discoverytemplates/:id,resources:show
+Discovery Templates,PATCH,/discoverytemplates/:id,resources:update
+Discovery Templates,PUT,/discoverytemplates/:id,resources:update
+Discovery Templates,GET,/discoverytemplates/:id/edit,resources:edit
+Discovery Templates,GET,/discoverytemplates/new,resources:new
+Other,GET,/edit,direct-route
+Comparison Dashboard,GET,/export_quaterly_vulnerability,direct-route
+Comparison Dashboard,GET,/fetch_vuln_details,direct-route
+Home Dashboards,GET,/homes,resources:index
+Home Dashboards,POST,/homes,resources:create
+Home Dashboards,DELETE,/homes/:id,resources:destroy
+Home Dashboards,GET,/homes/:id,resources:show
+Home Dashboards,PATCH,/homes/:id,resources:update
+Home Dashboards,PUT,/homes/:id,resources:update
+Home Dashboards,GET,/homes/:id/edit,resources:edit
+Home Dashboards,GET,/homes/asset_discovery_dashboard,resource-collection
+Home Dashboards,GET,/homes/asset_monitoring,resource-collection
+Home Dashboards,GET,/homes/externalsurface,resource-collection
+Home Dashboards,GET,/homes/global_dashboard,resource-collection
+Home Dashboards,GET,/homes/new,resources:new
+Home Dashboards,GET,/homes/threatmonitor,resource-collection
+Home Dashboards,GET,/homes/uptime_monitoring_dashboard,resource-collection
+Integrators,GET,/integrators,resources:index
+Integrators,POST,/integrators,resources:create
+Integrators,DELETE,/integrators/:id,resources:destroy
+Integrators,GET,/integrators/:id,resources:show
+Integrators,PATCH,/integrators/:id,resources:update
+Integrators,PUT,/integrators/:id,resources:update
+Integrators,GET,/integrators/:id/edit,resources:edit
+Integrators,GET,/integrators/new,resources:new
+OEM Signatures,GET,/oemsignatures,resources:index
+OEM Signatures,POST,/oemsignatures,resources:create
+OEM Signatures,DELETE,/oemsignatures/:id,resources:destroy
+OEM Signatures,GET,/oemsignatures/:id,resources:show
+OEM Signatures,PATCH,/oemsignatures/:id,resources:update
+OEM Signatures,PUT,/oemsignatures/:id,resources:update
+OEM Signatures,GET,/oemsignatures/:id/edit,resources:edit
+OEM Signatures,POST,/oemsignatures/create_oem_signature,resource-collection
+OEM Signatures,GET,/oemsignatures/download_sample_csv,resource-collection
+OEM Signatures,GET,/oemsignatures/import_signature_form,resource-collection
+OEM Signatures,GET,/oemsignatures/new,resources:new
+OEM Signatures,POST,/oemsignatures/signature_import,resource-collection
+Comparison Dashboard,GET,/quarterly_details,direct-route
+Comparison Dashboard,GET,/quaterly_vulnerability_dashboard,direct-route
+Other,GET,/reports,resources:index
+Other,POST,/reports,resources:create
+Other,DELETE,/reports/:id,resources:destroy
+Other,GET,/reports/:id,resources:show
+Other,PATCH,/reports/:id,resources:update
+Other,PUT,/reports/:id,resources:update
+Other,GET,/reports/:id/edit,resources:edit
+Other,GET,/reports/alerts,direct-route
+API Key Reports,GET,/reports/api_cve_details,resource-collection
+API Key Reports,GET,/reports/api_cwe_details,resource-collection
+API Key Reports,GET,/reports/api_device_details,resource-collection
+API Key Reports,GET,/reports/api_scan_details,resource-collection
+Other,GET,/reports/detail,resource-collection
+Other,GET,/reports/detailed_status,resource-collection
+Other,GET,/reports/export,resource-collection
+Other,GET,/reports/export_alerts,resource-collection
+Other,GET,/reports/export_alerts_file_status,resource-collection
+Other,GET,/reports/gen_iso_report,resource-collection
+Other,GET,/reports/gen_report,resource-collection
+Other,GET,/reports/get_device_count,direct-route
+Other,GET,/reports/get_device_count_all,direct-route
+Other,GET,/reports/get_locations,direct-route
+Other,GET,/reports/hostprofile,resource-collection
+Other,GET,/reports/master_results,resource-collection
+Other,GET,/reports/model_numbers,direct-route
+Other,GET,/reports/new,resources:new
+Other,GET,/reports/open_ports,direct-route
+Other,POST,/reports/save_evidence,resource-collection
+Other,GET,/reports/vapt_counts,direct-route
+Other,GET,/reports/vulnerable_hosts,direct-route
+2FA / OTP (Web),GET,/resend_otp,direct-route
+Application Utilities,POST,/set_timezone,direct-route
+Tenant Management,GET,/tenants,resources:index
+Tenant Management,POST,/tenants,resources:create
+Tenant Management,DELETE,/tenants/:id,resources:destroy
+Tenant Management,GET,/tenants/:id,resources:show
+Tenant Management,PATCH,/tenants/:id,resources:update
+Tenant Management,PUT,/tenants/:id,resources:update
+Tenant Management,GET,/tenants/:id/edit,resources:edit
+Tenant Management,GET,/tenants/app_update,resource-collection
+Tenant Management,GET,/tenants/app_upgrade,resource-collection
+Tenant Management,GET,/tenants/db_update,resource-collection
+Tenant Management,GET,/tenants/new,resources:new
+Other,PATCH,/update,direct-route
+App Update History,GET,/update_app_histories,resources:index
+App Update History,POST,/update_app_histories,resources:create
+App Update History,DELETE,/update_app_histories/:id,resources:destroy
+App Update History,GET,/update_app_histories/:id,resources:show
+App Update History,PATCH,/update_app_histories/:id,resources:update
+App Update History,PUT,/update_app_histories/:id,resources:update
+App Update History,GET,/update_app_histories/:id/edit,resources:edit
+App Update History,GET,/update_app_histories/new,resources:new
+App Update History,GET,/update_type,direct-route
+Users,PATCH,/update_user,direct-route
+Users,GET,/users,resources:index
+Users,POST,/users,resources:create
+Users,DELETE,/users/:id,resources:destroy
+Users,GET,/users/:id,resources:show
+Users,PATCH,/users/:id,resources:update
+Users,PUT,/users/:id,resources:update
+Users,GET,/users/:id/edit,resources:edit
+Users,GET,/users/:id/self_edit,resource-member
+Users,PATCH,/users/:id/self_update,resource-member
+Users,GET,/users/new,resources:new
+Users,PATCH,/users/password,devise-default
+Users,POST,/users/password,devise-default
+Users,PUT,/users/password,devise-default
+Users,GET,/users/password/edit,devise-default
+Users,GET,/users/password/new,devise-default
+Authentication,GET,/users/sign_in,devise-default
+Authentication,POST,/users/sign_in,devise-default
+Authentication,DELETE,/users/sign_out,devise-default
+2FA / OTP (Web),GET,/verify_otp,direct-route
+2FA / OTP (Web),POST,/verify_otp,direct-route
+Zip Uploads,GET,/zip_uploads,resources:index
+Zip Uploads,POST,/zip_uploads,resources:create
+Zip Uploads,DELETE,/zip_uploads/:id,resources:destroy
+Zip Uploads,GET,/zip_uploads/:id,resources:show
+Zip Uploads,PATCH,/zip_uploads/:id,resources:update
+Zip Uploads,PUT,/zip_uploads/:id,resources:update
+Zip Uploads,GET,/zip_uploads/:id/edit,resources:edit
+Zip Uploads,GET,/zip_uploads/new,resources:new

@@ -1,0 +1,12 @@
+{
+  "admin": {
+    "username": "qa.admin@redinent.example.com",
+    "password": "replace_me",
+    "tenantId": "tenant-qa-001"
+  },
+  "viewer": {
+    "username": "qa.viewer@redinent.example.com",
+    "password": "replace_me",
+    "tenantId": "tenant-qa-001"
+  }
+}

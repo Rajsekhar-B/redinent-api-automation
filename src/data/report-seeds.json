@@ -1,0 +1,40 @@
+{
+  "create": {
+    "report": {
+      "name": "qa-report-seed",
+      "title": "QA Report Seed",
+      "format": "pdf",
+      "category": "asset-security",
+      "scope": "tenant",
+      "filters": {
+        "severity": ["critical", "high"],
+        "status": ["open"],
+        "time_range": "last_30_days"
+      }
+    }
+  },
+  "patch": {
+    "report": {
+      "title": "QA Report Seed - Patched",
+      "filters": {
+        "severity": ["medium", "high"],
+        "status": ["open", "in_progress"],
+        "time_range": "last_7_days"
+      }
+    }
+  },
+  "put": {
+    "report": {
+      "name": "qa-report-seed-replaced",
+      "title": "QA Report Seed - Replaced",
+      "format": "json",
+      "category": "threat-intelligence",
+      "scope": "tenant",
+      "filters": {
+        "severity": ["critical"],
+        "status": ["open"],
+        "time_range": "last_90_days"
+      }
+    }
+  }
+}
