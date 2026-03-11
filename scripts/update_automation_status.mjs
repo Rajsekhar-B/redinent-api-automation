@@ -1,6 +1,7 @@
 import fs from 'fs';
+import path from 'path';
 
-const filePath = '/Users/raj/Documents/redinent-nextgen.nosync/redinent-api-automation/docs/automation-mapping-sheet.csv';
+const filePath = process.env.AUTOMATION_MAPPING_FILE ?? path.resolve(process.cwd(), 'docs/automation-mapping-sheet.csv');
 const runDate = process.env.RUN_DATE ?? new Date().toISOString().slice(0, 10);
 
 function parseCsv(content) {
@@ -180,12 +181,18 @@ const moduleAspectStatus = {
     Positive: 'PASS',
     Negative: 'PASS',
     Boundary: 'FAIL',
+    Edge: 'PASS',
+    Equivalence: 'PASS',
+    Chaos: 'PASS',
     Abuse: 'PASS'
   },
   '2FA / OTP (Web)': {
     Positive: 'PASS',
     Negative: 'FAIL',
     Boundary: 'FAIL',
+    Edge: 'PASS',
+    Equivalence: 'PASS',
+    Chaos: 'PASS',
     Regression: 'PASS',
     Abuse: 'PASS'
   },
@@ -197,6 +204,11 @@ const moduleAspectStatus = {
     Abuse: 'PASS'
   }
 };
+
+if (!fs.existsSync(filePath)) {
+  console.log(`status:update skipped; mapping file not found at ${filePath}`);
+  process.exit(0);
+}
 
 const content = fs.readFileSync(filePath, 'utf8');
 const rows = parseCsv(content);
