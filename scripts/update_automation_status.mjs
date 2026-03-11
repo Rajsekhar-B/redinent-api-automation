@@ -180,12 +180,18 @@ const moduleAspectStatus = {
     Positive: 'PASS',
     Negative: 'PASS',
     Boundary: 'FAIL',
+    Edge: 'PASS',
+    Equivalence: 'PASS',
+    Chaos: 'PASS',
     Abuse: 'PASS'
   },
   '2FA / OTP (Web)': {
     Positive: 'PASS',
     Negative: 'FAIL',
     Boundary: 'FAIL',
+    Edge: 'PASS',
+    Equivalence: 'PASS',
+    Chaos: 'PASS',
     Regression: 'PASS',
     Abuse: 'PASS'
   },
