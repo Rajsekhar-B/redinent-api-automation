@@ -51,9 +51,9 @@ jobs:
       - run: npm run test:smoke
         env:
           NODE_ENV: ${{ env.TARGET_ENV }}
-          BASE_URL: ${{ secrets.BASE_URL }}
-          DEFAULT_USERNAME: ${{ secrets.DEFAULT_USERNAME }}
-          DEFAULT_PASSWORD: ${{ secrets.DEFAULT_PASSWORD }}
+          BASE_URL: ${{ secrets.BASE_URL || 'http://127.0.0.1:3000' }}
+          DEFAULT_USERNAME: ${{ secrets.DEFAULT_USERNAME || 'qa.sdet@redinent.example.com' }}
+          DEFAULT_PASSWORD: ${{ secrets.DEFAULT_PASSWORD || 'replace_me' }}
           CORE_API_KEY: ${{ secrets.CORE_API_KEY }}
           SAMPLE_UID: ${{ secrets.SAMPLE_UID }}
       - run: RUN_DATE=$(date -u +%F) npm run status:update
@@ -91,9 +91,9 @@ jobs:
       - run: npm run test:regression
         env:
           NODE_ENV: ${{ env.TARGET_ENV }}
-          BASE_URL: ${{ secrets.BASE_URL }}
-          DEFAULT_USERNAME: ${{ secrets.DEFAULT_USERNAME }}
-          DEFAULT_PASSWORD: ${{ secrets.DEFAULT_PASSWORD }}
+          BASE_URL: ${{ secrets.BASE_URL || 'http://127.0.0.1:3000' }}
+          DEFAULT_USERNAME: ${{ secrets.DEFAULT_USERNAME || 'qa.sdet@redinent.example.com' }}
+          DEFAULT_PASSWORD: ${{ secrets.DEFAULT_PASSWORD || 'replace_me' }}
           CORE_API_KEY: ${{ secrets.CORE_API_KEY }}
           SAMPLE_UID: ${{ secrets.SAMPLE_UID }}
       - run: RUN_DATE=$(date -u +%F) npm run status:update
@@ -131,9 +131,9 @@ jobs:
       - run: npm run test:security
         env:
           NODE_ENV: ${{ env.TARGET_ENV }}
-          BASE_URL: ${{ secrets.BASE_URL }}
-          DEFAULT_USERNAME: ${{ secrets.DEFAULT_USERNAME }}
-          DEFAULT_PASSWORD: ${{ secrets.DEFAULT_PASSWORD }}
+          BASE_URL: ${{ secrets.BASE_URL || 'http://127.0.0.1:3000' }}
+          DEFAULT_USERNAME: ${{ secrets.DEFAULT_USERNAME || 'qa.sdet@redinent.example.com' }}
+          DEFAULT_PASSWORD: ${{ secrets.DEFAULT_PASSWORD || 'replace_me' }}
           CORE_API_KEY: ${{ secrets.CORE_API_KEY }}
           SAMPLE_UID: ${{ secrets.SAMPLE_UID }}
       - run: RUN_DATE=$(date -u +%F) npm run status:update
