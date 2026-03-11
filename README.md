@@ -67,3 +67,5 @@
 - API server is the Rails app (`redinent-frontend`) reachable at `BASE_URL`.
 - API sign-in returns `response.authentication_token` for token-header auth fallback.
 - Some report-detail endpoints encode logical status in JSON (`status: 401`) while returning HTTP 200.
+
+## GitHub PR workflow verified on 2026-03-11
