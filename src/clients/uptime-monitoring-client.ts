@@ -54,4 +54,19 @@ export class UptimeMonitoringClient extends BaseApiClient {
     const response = await this.post(endpointMap.uptimeMonitoring.setFrequency, payload);
     return { status: response.status(), body: await this.parseBody(response) };
   }
+
+  async serverDetail(params: Record<string, string | number | boolean> = {}): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.get(endpointMap.uptimeMonitoring.serverDetail, params);
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
+
+  async graph(payload: JsonLike): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.post(endpointMap.uptimeMonitoring.graph, payload);
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
+
+  async deleteById(id: string): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.delete(this.monitorPath(id));
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
 }

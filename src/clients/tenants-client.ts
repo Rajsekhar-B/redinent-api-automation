@@ -54,4 +54,25 @@ export class TenantsClient extends BaseApiClient {
     const response = await this.request.fetch(endpointMap.tenants.list, { method: 'GET' });
     return { status: response.status(), body: await this.parseBody(response) };
   }
+
+  async callRoute(
+    method: 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE',
+    route: string,
+    payload?: Record<string, unknown>
+  ): Promise<{ status: number; body: Record<string, unknown> }> {
+    let response;
+    if (method === 'GET') {
+      response = await this.get(route);
+    } else if (method === 'POST') {
+      response = await this.post(route, payload ?? {});
+    } else if (method === 'PUT') {
+      response = await this.put(route, payload ?? {});
+    } else if (method === 'PATCH') {
+      response = await this.patch(route, payload ?? {});
+    } else {
+      response = await this.delete(route);
+    }
+
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
 }
