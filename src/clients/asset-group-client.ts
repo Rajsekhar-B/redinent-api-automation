@@ -18,6 +18,14 @@ export class AssetGroupClient extends BaseApiClient {
     return endpointMap.assetGroupManagement.toggleActivation.replace(':id', encodeURIComponent(id));
   }
 
+  private editPath(id: string): string {
+    return `${this.groupPath(id)}/edit`;
+  }
+
+  private newPath(): string {
+    return `${endpointMap.assetGroupManagement.list}/new`;
+  }
+
   private async parseBody(response: { json: () => Promise<unknown>; headers: () => Record<string, string> }): Promise<JsonLike> {
     const contentType = response.headers()['content-type'] ?? '';
     if (!contentType.includes('application/json')) return {};
@@ -46,6 +54,26 @@ export class AssetGroupClient extends BaseApiClient {
 
   async patchById(id: string, payload: JsonLike): Promise<{ status: number; body: JsonLike }> {
     const response = await this.patch(this.groupPath(id), payload);
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
+
+  async putById(id: string, payload: JsonLike): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.put(this.groupPath(id), payload);
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
+
+  async deleteById(id: string): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.delete(this.groupPath(id));
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
+
+  async getEditById(id: string): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.get(this.editPath(id));
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
+
+  async getNew(): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.get(this.newPath());
     return { status: response.status(), body: await this.parseBody(response) };
   }
 

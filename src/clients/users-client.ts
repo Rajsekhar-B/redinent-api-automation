@@ -49,4 +49,9 @@ export class UsersClient extends BaseApiClient {
     const response = await this.post(endpointMap.users.createLegacy, payload);
     return { status: response.status(), body: await this.parseBody(response) };
   }
+
+  async updateLegacy(payload: JsonLike): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.post(endpointMap.users.updateLegacy, payload);
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
 }

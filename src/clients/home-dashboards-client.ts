@@ -35,6 +35,21 @@ export class HomeDashboardsClient extends BaseApiClient {
     return { status: response.status(), body: await this.parseBody(response) };
   }
 
+  async create(payload: JsonLike): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.post(endpointMap.homeDashboards.create, payload);
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
+
+  async patchById(id: string, payload: JsonLike): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.patch(this.homePath(id), payload);
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
+
+  async deleteById(id: string): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.delete(this.homePath(id));
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
+
   async getDashboard(
     key:
       | 'assetDiscoveryDashboard'

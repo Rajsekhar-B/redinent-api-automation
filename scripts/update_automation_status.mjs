@@ -74,7 +74,10 @@ const moduleAspectStatus = {
     Positive: 'PASS',
     Negative: 'PASS',
     Boundary: 'PASS',
-    Abuse: 'PASS'
+    Edge: 'PASS',
+    Equivalence: 'PASS',
+    Abuse: 'PASS',
+    Chaos: 'PASS'
   },
   'Reports API': {
     Positive: 'PASS',
@@ -83,24 +86,37 @@ const moduleAspectStatus = {
     Abuse: 'PASS'
   },
   'API Key Reports': {
+    Positive: 'PASS',
+    Edge: 'PASS',
+    Boundary: 'PASS',
+    Equivalence: 'PASS',
     Negative: 'PASS',
-    Abuse: 'PASS'
+    Abuse: 'PASS',
+    Chaos: 'PASS'
   },
   'Tenant Management': {
     Positive: 'PASS',
     Negative: 'FAIL',
+    Edge: 'FAIL',
+    Equivalence: 'FAIL',
+    Chaos: 'FAIL',
     Boundary: 'FAIL',
     Abuse: 'FAIL'
   },
   'Devices & Assets': {
     Positive: 'PASS',
     Negative: 'PASS',
+    Edge: 'FAIL',
+    Equivalence: 'FAIL',
+    Chaos: 'FAIL',
     Boundary: 'FAIL',
     Abuse: 'PASS'
   },
   'Discovery & Scan': {
     Positive: 'PASS',
     Negative: 'PASS',
+    Edge: 'FAIL',
+    Equivalence: 'FAIL',
     Boundary: 'FAIL',
     Abuse: 'FAIL',
     Chaos: 'FAIL'
@@ -108,30 +124,45 @@ const moduleAspectStatus = {
   Users: {
     Positive: 'PASS',
     Negative: 'FAIL',
+    Edge: 'FAIL',
+    Equivalence: 'PASS',
+    Chaos: 'PASS',
     Boundary: 'FAIL',
     Abuse: 'FAIL'
   },
   Diagnostics: {
     Positive: 'PASS',
     Negative: 'FAIL',
+    Edge: 'PASS',
+    Equivalence: 'FAIL',
+    Chaos: 'FAIL',
     Boundary: 'FAIL',
     Abuse: 'FAIL'
   },
   'OEM Signatures': {
     Positive: 'PASS',
     Negative: 'FAIL',
+    Edge: 'PASS',
+    Equivalence: 'PASS',
+    Chaos: 'PASS',
     Boundary: 'PASS',
     Abuse: 'PASS'
   },
   'Asset Group Management': {
     Positive: 'PASS',
     Negative: 'PASS',
+    Edge: 'PASS',
+    Equivalence: 'PASS',
     Boundary: 'PASS',
-    Abuse: 'PASS'
+    Abuse: 'PASS',
+    Chaos: 'PASS'
   },
   'App Update History': {
     Positive: 'PASS',
     Negative: 'PASS',
+    Edge: 'PASS',
+    Equivalence: 'PASS',
+    Chaos: 'PASS',
     Boundary: 'PASS',
     Abuse: 'PASS',
     Regression: 'FAIL'
@@ -139,41 +170,65 @@ const moduleAspectStatus = {
   Integrators: {
     Positive: 'PASS',
     Negative: 'PASS',
+    Edge: 'PASS',
+    Equivalence: 'PASS',
     Boundary: 'FAIL',
-    Abuse: 'PASS'
+    Abuse: 'PASS',
+    Chaos: 'PASS'
   },
   'Discovery Templates': {
     Positive: 'PASS',
     Negative: 'FAIL',
+    Edge: 'FAIL',
+    Equivalence: 'FAIL',
+    Chaos: 'FAIL',
     Boundary: 'FAIL',
     Abuse: 'PASS'
   },
   'Zip Uploads': {
     Positive: 'PASS',
     Negative: 'PASS',
+    Edge: 'FAIL',
+    Equivalence: 'FAIL',
+    Chaos: 'FAIL',
     Boundary: 'FAIL',
     Abuse: 'PASS'
   },
   'CWE Results': {
     Positive: 'FAIL',
     Negative: 'PASS',
+    Edge: 'PASS',
+    Equivalence: 'PASS',
+    Chaos: 'PASS',
     Boundary: 'PASS',
     Abuse: 'PASS'
   },
   'Home Dashboards': {
     Positive: 'PASS',
     Negative: 'PASS',
+    Edge: 'PASS',
+    Boundary: 'PASS',
+    Equivalence: 'PASS',
+    Abuse: 'PASS',
+    Chaos: 'PASS',
     Regression: 'PASS'
   },
   'Comparison Dashboard': {
     Positive: 'PASS',
     Negative: 'PASS',
+    Edge: 'PASS',
+    Equivalence: 'PASS',
+    Abuse: 'PASS',
+    Chaos: 'PASS',
     Boundary: 'FAIL',
     Regression: 'PASS'
   },
   'Uptime Monitoring': {
     Positive: 'PASS',
     Negative: 'FAIL',
+    Edge: 'PASS',
+    Equivalence: 'PASS',
+    Chaos: 'PASS',
     Boundary: 'PASS',
     Abuse: 'PASS'
   },
@@ -200,8 +255,11 @@ const moduleAspectStatus = {
     Positive: 'FAIL',
     Negative: 'PASS',
     Boundary: 'FAIL',
+    Edge: 'FAIL',
+    Equivalence: 'PASS',
     Regression: 'FAIL',
-    Abuse: 'PASS'
+    Abuse: 'PASS',
+    Chaos: 'FAIL'
   }
 };
 
@@ -235,8 +293,8 @@ for (let i = 1; i < rows.length; i += 1) {
   const row = rows[i];
   while (row.length < header.length) row.push('');
 
-  const module = row[idx.module];
-  const aspect = row[idx.aspect];
+  const module = String(row[idx.module] ?? '').trim();
+  const aspect = String(row[idx.aspect] ?? '').trim();
   const statusMap = moduleAspectStatus[module];
   const result = statusMap?.[aspect] ?? 'NOT RUN';
 

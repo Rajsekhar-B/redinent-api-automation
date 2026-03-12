@@ -44,4 +44,14 @@ export class CweResultsClient extends BaseApiClient {
     const response = await this.patch(this.cwePath(id), payload);
     return { status: response.status(), body: await this.parseBody(response) };
   }
+
+  async deleteById(id: string): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.delete(this.cwePath(id));
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
+
+  async dashboardView(): Promise<{ status: number; body: JsonLike }> {
+    const response = await this.get(`${endpointMap.cweResults.list}/dashboard_view`);
+    return { status: response.status(), body: await this.parseBody(response) };
+  }
 }
